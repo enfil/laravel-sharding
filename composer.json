@@ -1,0 +1,12 @@
+{
+    "name": "enfil/sharding",
+    "description": "Laravel 5.1 sharding",
+    "authors": [
+        {
+            "name": "enfil",
+            "email": "enfilg@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
