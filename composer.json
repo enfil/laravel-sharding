@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tymon\\JWTAuth\\": "src"
+            "Enfil\\Sharding\\": "src"
         }
     }
 }
