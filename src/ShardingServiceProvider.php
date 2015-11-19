@@ -27,7 +27,6 @@ class ShardingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__.'/routes.php';
         $this->registerConnectionManager();
         $this->app->bind('enfil.shardmanager', function () {
             return new ShardManager(
