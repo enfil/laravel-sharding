@@ -12,18 +12,18 @@ class ShardManager
      */
     private $shardChooser;
     private $idGenerator;
-    private $mapManger;
+    private $mapManager;
 
-    public function __construct(MapManager $mapManger)
+    public function __construct(MapManager $mapManager)
     {
-        $this->mapManger = $mapManger;
+        $this->mapManager = $mapManager;
     }
 
     public function setService($name)
     {
-        $this->mapManger->setService($name);
-        $this->shardChooser = $this->mapManger->getShardChooser();
-        $this->idGenerator = $this->mapManger->getidGenerator();
+        $this->mapManager->setService($name);
+        $this->shardChooser = $this->mapManager->getShardChooser();
+        $this->idGenerator = $this->mapManager->getidGenerator();
     }
 
     public function getShardById($id)
@@ -31,9 +31,9 @@ class ShardManager
         return $this->shardChooser->getShardById($id);
     }
 
-    public function getIdsFromShard($firsId, $lastId, $shard)
+    public function getIdsFromShard($firstId, $lastId, $shard)
     {
-        return $this->shardChooser->getIdsFromShard($firsId, $lastId, $shard);
+        return $this->shardChooser->getIdsFromShard($firstId, $lastId, $shard);
     }
 
     public function getLastId()
