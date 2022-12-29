@@ -1,5 +1,10 @@
 # laravel-sharding
 
+################################################
+#                **LEGACY!!!**                 #
+#           CLOSED AND NOT SUPPORTED           #
+################################################
+
 ## Installation
 
 #### Download package  
